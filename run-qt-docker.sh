@@ -10,6 +10,8 @@ docker run -v /tmp/.X11-unix:/tmp/.X11-unix \
            -e DISPLAY=$DISPLAY \
            -v /dev/shm:/dev/shm \
            -v ~/src:/home/${user}/src \
+           -v ~/.config/Qt:/home/${user}/.config/Qt \
+           -v ~/.config/QtProject:/home/${user}/.config/QtProject \
            --device /dev/dri \
            --name qt_creator \
            --rm \
